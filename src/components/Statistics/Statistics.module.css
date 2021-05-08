@@ -1,0 +1,15 @@
+.text {
+  font-size: 20px;
+}
+
+.text span {
+  font-weight: bold;
+}
+
+.text__good span {
+  color: rgb(0, 210, 0);
+}
+
+.text__bad span {
+  color: rgb(230, 0, 0);
+}

@@ -1,0 +1,20 @@
+.button {
+  min-width: 100px;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: grey;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.button:hover,
+.button:focus {
+  color: whitesmoke;
+  background-color: black;
+  border-color: whitesmoke;
+}
