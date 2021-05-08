@@ -9,8 +9,6 @@ const Statistics = ({ good, neutral, bad }) => {
 
   const countPositiveFeedbackPercentage = () => Math.round((good * 100) / countTotalFeedback());
 
-  const styleValue = countTotalFeedback() > 80 ? style.span__good : style.span__bad;
-
   return (
     <div className={style.text}>
       <p className={style.text__good}>
@@ -25,9 +23,8 @@ const Statistics = ({ good, neutral, bad }) => {
       <p>
         Total: <span>{countTotalFeedback()}</span>
       </p>
-      {/* <p className={countTotalFeedback() > 80 ? style.text__good : style.text__bad}></p> */}
       <p>
-        Positive Feedback: <span className={styleValue}>{countPositiveFeedbackPercentage()}</span>
+        Positive Feedback: <span> {countPositiveFeedbackPercentage()}</span>
       </p>
     </div>
   );
